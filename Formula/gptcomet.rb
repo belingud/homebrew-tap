@@ -2,9 +2,9 @@ class Gptcomet < Formula
   desc "AI-powered Git commit message generator and reviewer"
   homepage "https://github.com/belingud/gptcomet"
   url "https://github.com/belingud/gptcomet.git",
-      tag:      "v2.4.1",
-      revision: "186b456f3a941e93f184eda7db3658d34d8eeba1"
-  version "2.4.1"
+      tag:      "v2.5.0",
+      revision: "52b6190c3977c3fe4de0e8b256c79a83049a833b"
+  version "2.5.0"
   license "MIT"
   head "https://github.com/belingud/gptcomet.git", branch: "master"
 
@@ -16,6 +16,7 @@ class Gptcomet < Formula
     ldflags = %W[
       -s -w
       -X main.version=#{version}
+      -X github.com/belingud/gptcomet/cmd.InstallationSource=homebrew
     ]
 
     system "go", "build", *std_go_args(ldflags:), "."
