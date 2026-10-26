@@ -2,9 +2,9 @@ class Gptcomet < Formula
   desc "AI-powered Git commit message generator and reviewer"
   homepage "https://github.com/belingud/gptcomet"
   url "https://github.com/belingud/gptcomet.git",
-      tag:      "v2.5.1",
-      revision: "bb5578c824d024a736231e296410e104e54f7c58"
-  version "2.5.1"
+      tag:      "v2.6.2",
+      revision: "83048adcd013944f542d962bf7c96a9f36395d77"
+  version "2.6.2"
   license "MIT"
   head "https://github.com/belingud/gptcomet.git", branch: "master"
 
